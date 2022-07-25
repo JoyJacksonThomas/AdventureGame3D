@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4803431003203662497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4803431003203662510}
+  - component: {fileID: 4803431003203662511}
+  m_Layer: 0
+  m_Name: CoinSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4803431003203662510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4803431003203662497}
+  m_LocalRotation: {x: -0.1323843, y: -0.042809457, z: -0.0057221185, w: 0.990257}
+  m_LocalPosition: {x: -1.4987602, y: 14.0168495, z: 116.79408}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4803431003203662511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4803431003203662497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f64e9f77963d5e48a0516230b8e02fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeBeforeSpawn: 1
+  MinCoinSpawnRate: 0.6
+  MaxCoinSpawnRate: 0.15
+  CoinSpawnRateCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.021279614
+      outSlope: 0.021279614
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.5541667
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  TimeToReachMaxSpawnRate: 8
+  CoinPrefab: {fileID: 8528657289435459162, guid: b6c1eee0c23ba09499c12f39984a4fc2, type: 3}
+  CoinSoundClips:
+  - {fileID: 8300000, guid: b24466be723cf354294a196bd93075fa, type: 3}
+  - {fileID: 8300000, guid: a8b7cd50decb7b048b4ad2cf6f7fa20e, type: 3}
+  - {fileID: 8300000, guid: 1fc083984939ab04ea1fb08d340f2869, type: 3}
+  - {fileID: 8300000, guid: 4fe2d019734300647a8faee6d99e8615, type: 3}
+  - {fileID: 8300000, guid: c906d8ee5176b3d4eb951a764e269b86, type: 3}
+  - {fileID: 8300000, guid: f5630fa34b8281c4b9308b3a6a857c34, type: 3}
+  MoneyValue: 0
+  NumBronzeCoins: 0
+  NumSilverCoins: 0
+  NumGoldCoins: 0
+  NumDiamondCoins: 0
